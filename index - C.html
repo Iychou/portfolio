@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Arrouch | Portfolio</title>
+    <meta name="description" content="Portfolio de Youssef Arrouch - Database Administrator & IT Technician">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- VIDEO BACKGROUND -->
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+
+    <!-- CONTACT POPUP -->
+    <div class="contact-popup" id="contactPopup">
+        <span class="close-btn" id="closeContact">&times;</span>
+        <h2>Contact Me</h2>
+        <div class="contact-icon" id="contactIcon"></div>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn primary form-btn">Send Message</button>
+        </form>
+        <div class="contact-divider">or reach me directly</div>
+        <div class="contact-links">
+            <a href="mailto:youssefarrouch2@gmail.com" class="contact-link">
+                <span class="link-icon">📧</span> Email
+            </a>
+            <a href="tel:+212696636829" class="contact-link">
+                <span class="link-icon">📱</span> Phone
+            </a>
+            <a href="https://linkedin.com/in/youssef-arouch-5918b7298" target="_blank" class="contact-link">
+                <span class="link-icon">💼</span> LinkedIn
+            </a>
+            <a href="https://github.com/Iychou" target="_blank" class="contact-link">
+                <span class="link-icon">💻</span> GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- CV POPUP -->
+    <div class="cv-popup" id="cvPopup">
+        <span class="close-btn" id="closeCv">&times;</span>
+        <h2>Curriculum Vitae</h2>
+        <iframe src="CV_Professionnel2.pdf" width="100%" height="500px" style="border: none;"></iframe>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">YOUSSEF ARROUCH</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact" id="navContact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <h1>Database Administrator & IT Technician</h1>
+            <p class="hero-subtitle">Passionate about technology and database management</p>
+            <div class="typing-container">
+                <span class="typing-text">Building robust systems • Optimizing performance • Ensuring security</span>
+            </div>
+            <div class="cta">
+                <a href="#education" class="btn primary">View Education</a>
+                <button class="btn outline" id="contactBtn">Contact Me</button>
+                <button class="btn outline" id="cvBtn">View CV</button>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="profile-container">
+                <img src="photo personnel.png" alt="Youssef Arrouch - Profile Picture">
+                <div class="profile-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+        <div class="big-card">
+            <h2>Technical Skills</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🗄️</div>
+                    <h3>Oracle DBA</h3>
+                    <p>Database Administration • Transparent Data Encryption • Backup & Recovery • Performance Tuning</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>System Administration</h3>
+                    <p>Windows & Linux Server Management • Group Policy Objects • User Management • Security Configuration</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Network Technician</h3>
+                    <p>Network Security & Configuration • Firewall Management • Network Monitoring • Troubleshooting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section">
+        <div class="big-card">
+            <h2>Education</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Scientific Baccalaureate</h3>
+                    <p>High School Diploma in Science<br><span class="date">2023-2025 • Tinghir, Morocco</span></p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Digital Infrastructure Diploma</h3>
+                    <p>Specialized training in IT infrastructure and systems<br><span class="date">2023-2025 • Settat, Morocco</span></p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Jobintech Training</h3>
+                    <p>Professional training program<br><span class="date">2023-2025 • Supemir</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience-section">
+        <div class="big-card">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>IT Support Specialist</h3>
+                        <span class="company">PARMATEC</span>
+                        <span class="period">2025 </span>
+                        <p>Providing technical support and troubleshooting for various IT systems,
+                             including hardware and software issues. Managing network configurations and ensuring system security.</p>
+                        <div class="skills-used">
+                            <span>Windows Server</span>
+                            <span>Linux</span>
+                            <span>Network Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Network Technician</h3>
+                        <span class="company">PARMATEC</span>
+                        <span class="period">2023 - 2024</span>
+                        <p>Configured and maintained network infrastructure, including routers, switches, and firewalls. 
+                            Monitored network performance and resolved connectivity issues.</p>
+                        <div class="skills-used">
+                            <span>Cisco Networking</span>
+                            <span>Firewall Management</span>
+                            <span>Network Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+        <div class="big-card">
+            <h2>Featured Projects</h2>
+            <div class="project-content">
+                <div class="project-item">
+                    <div class="project-header">
+                        <div class="project-icon">💼</div>
+                        <h3>Portfolio Website</h3>
+                    </div>
+                    <p>This personal portfolio website showcases my skills, education, and professional background. I designed the layout using Canva and then transformed it into a fully functional website using HTML, CSS, and JavaScript, demonstrating my web development capabilities.</p>
+                    <div class="project-tech">HTML • CSS • JavaScript</div>
+                    <a href="https://github.com/Iychou" target="_blank" class="project-link">View on GitHub ↗</a>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <div class="project-icon">🗄️</div>
+                        <h3>Oracle Database Deployment & SQL</h3>
+                    </div>
+                    <p>Successfully deployed and configured an Oracle Database on a Linux server environment. Implemented database security measures, created sample databases for testing purposes, and executed various SQL statements to validate functionality and performance.</p>
+                    <div class="project-tech">Oracle Database • Linux • SQL</div>
+                    <a href="https://github.com/Iychou/Oracle--hotel-system-management" target="_blank" class="project-link">View on GitHub ↗</a>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <div class="project-icon">🎮</div>
+                        <h3>Snake Game with Python</h3>
+                    </div>
+                    <p>Developed a classic Snake game using Python and the Pygame library. Implemented core game mechanics including movement, collision detection, scoring system, and user interface, showcasing programming fundamentals and game development skills.</p>
+                    <div class="project-tech">Python • Pygame</div>
+                    <a href="https://github.com/Iychou/snake-game" target="_blank" class="project-link">View on GitHub ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="certifications-section">
+        <div class="big-card">
+            <h2>Certifications & Achievements</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <div class="cert-icon">🏆</div>
+                    <h3>Oracle Database Administrator Certified</h3>
+                    <p>Certified in Oracle Database Administration fundamentals</p>
+                    <span class="cert-date">2026</span>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">🔒</div>
+                    <h3>cisco cyber Security </h3>
+                    <p>Certified in cybersecurity fundamentals in cisco academy 
+                    
+                    </p>
+                    <span class="cert-date">2025</span>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">🌐</div>
+                    <h3>Cisco Networking Essentials</h3>
+                    <p>Certified in network fundamentals and Cisco technologies by cisco academy</p>
+                    <span class="cert-date">2025</span>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">💻</div>
+                    <h3>SQL Certified: SQL Fundamentals</h3>
+                    <p>Certified in SQL fundamentals and database management</p>
+                    <span class="cert-date">2026 </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Youssef Arrouch</h3>
+                <p>Database Administrator & IT Technician</p>
+                <p>Passionate about creating efficient and secure IT solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Me</h4>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/youssef-arouch-5918b7298" target="_blank" title="LinkedIn">
+                        <span class="social-icon">💼</span>
+                    </a>
+                    <a href="https://github.com/Iychou" target="_blank" title="GitHub">
+                        <span class="social-icon">💻</span>
+                    </a>
+                    <a href="mailto:youssefarrouch2@gmail.com" title="Email">
+                        <span class="social-icon">📧</span>
+                    </a>
+                    <a href="tel:+212696636829" title="Phone">
+                        <span class="social-icon">📱</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Youssef Arrouch. All rights reserved.</p>
+            <p>Built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
